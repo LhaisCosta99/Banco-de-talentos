@@ -1,24 +1,58 @@
 import styled from "styled-components";
 
 export const HeaderStyle = styled.header`
-    background-color: #272727;
+    background-color: #dcdcdc;
     display: flex;
+    flex-direction: column;
     width: 100%;
-    height: 100px;
+    height: fit-content;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     div{
         display: flex;
-        width: 40%;
-        justify-content: flex-start;
+        width: 100%;
+        justify-content: space-around;
+        height: 100px;
+        div{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
     }
     h1{
-        color: #ffc340;
+        color: #272727;
         font-family: 'Star Wars', sans-serif;
         text-align: center;
     }
     img{
-        margin-left: 20px;
         width: 100px;
+    }
+    .barra-de-pesquisa{
+        display: flex;
+        justify-content: center;
+        width: 50%;
+    }
+    input{
+        border-radius: 5px;
+        padding: 5px;
+    }
+    .pesquisar{
+        width: 25px;
+        margin: 5px;
+    }
+    nav{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #666666;
+        height: 30px;
+        li{
+            list-style: none;
+            text-align: center;
+            color: #dcdcdc;
+            font-weight: bolder;
+            cursor: pointer;
+        }
     }
 `
