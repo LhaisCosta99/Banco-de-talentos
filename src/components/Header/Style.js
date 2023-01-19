@@ -5,7 +5,7 @@ export const HeaderStyle = styled.header`
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: fit-content;
+    height: max-content;
     align-items: center;
     justify-content: center;
     div{
@@ -53,6 +53,32 @@ export const HeaderStyle = styled.header`
             color: #dcdcdc;
             font-weight: bolder;
             cursor: pointer;
+        }
+    }
+    @media (max-width: 720px) {
+        div{
+            flex-direction: column;
+            height: fit-content;
+            align-items: center;
+            div{
+                flex-direction: row;
+                justify-content: center;
+                width: 70%;
+            }
+        }
+        .barra-de-pesquisa{
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        img{
+            width: 80px;
+        }
+        nav{
+            flex-direction: column;
+            height: fit-content;
+            li{
+                margin: 5px 0;
+            }
         }
     }
 `
